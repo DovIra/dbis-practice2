@@ -2,13 +2,13 @@
 
 ## Інструкція
 
-1. Якщо бази даних немає - створити базу и наповнити її скриптом з лаб1:
-- завантажити датасети з сайту https://zno.testportal.com.ua/opendata
-- запустити файл main.py
+1. Якщо бази даних немає - створити базу и наповнити її скриптом з лаб 1:
+- завантажити датасети з сайту https://zno.testportal.com.ua/opendata за 2019 та 2020 роки. Датасети назвати Odata2019File.csv і Odata2020File.csv відповідно
+- запустити файл [main.py](https://github.com/DovIra/dbis-practice/blob/main/main.py)
 2. Коли база існує:
 - змінити конфігурацію flyway під свою БД у conf/flyway.conf
-- положити у теку /sql  застосунку Flyway скрипти міграції
-- у консолі запустит застосунок Flyway із командою migrate
+- положити у теку /sql застосунку Flyway скрипти міграції *.sql
+- у консолі запустит застосунок Flyway із командою migrate: 'flyway migrate'
 
 ## Логічна модель даних
 ![Логічна](https://github.com/DovIra/dbis-practice2/blob/main/Logical_model.png)
@@ -17,3 +17,4 @@
 ![Фізична](https://github.com/DovIra/dbis-practice2/blob/main/physic_model.png)
 
 ## Лог міграцій бази результатів 2019 і 2020 років із попередньої лабороторної роботи
+![Результат міграції](https://github.com/DovIra/dbis-practice2/blob/main/migration_results.png)
