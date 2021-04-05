@@ -16,5 +16,8 @@
 ## Фізична модель даних
 ![Фізична](https://github.com/DovIra/dbis-practice2/blob/main/physic_model.png)
 
-## Лог міграцій бази результатів 2019 і 2020 років із попередньої лабороторної роботи
-![Результат міграції](https://github.com/DovIra/dbis-practice2/blob/main/migration_results.png)
+## Статус міграцій бази з результатами ЗНО за 2019 і 2020 роки.
+![Результат міграції](https://github.com/DovIra/dbis-practice2/blob/main/migration_info.png)
+
+## Лог міграції бази з результатами ЗНО за 2019 і 2020 роки.
+![Результат міграції](https://github.com/DovIra/dbis-practice2/blob/main/migration_log.png)

@@ -317,32 +317,12 @@ where zr.deuTest is not null
 ;
 
 INSERT INTO zno_enrollee_result
-    (registration_id, 
-	code_exam, 
-	test, 
-	teststatus, 
-	ball100, 
-	ball12, 
-	ball, 
-	ptname, 
-	ptregname, 
-	ptareaname, 
-	pttername, 
-	dpalevel)
-select 
-	zer.id,
+    (registration_id, code_exam, test, teststatus, ball100, ball12, dpalevel, ball, ptname, ptregname, ptareaname, pttername)
+ SELECT
+  zer.id,
 	'spa',
-	spaTest ,
-	spaTestStatus ,
-	spaBall100 ,
-	spaBall12 ,
-	spaBall ,
-	spaPTName ,
-	spaPTRegName ,
-	spaPTAreaName ,
-	spaPTTerName 
-	spaDPALevel 
-from zno_results zr
+       spatest, spateststatus, spaball100, spaball12, spadpalevel, spaball, spaptname, spaptregname, spaptareaname, spapttername
+FROM zno_results  zr 
 join zno_enrollee_registration zer on zr.OUTID = zer.OUTID
 where zr.spaTest is not null
 ;
